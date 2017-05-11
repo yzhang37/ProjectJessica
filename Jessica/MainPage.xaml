@@ -8,6 +8,27 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <SplitView>
+            <SplitView.Pane>
+                <StackPanel>
+                    <Button></Button>
+                </StackPanel>
+            </SplitView.Pane>
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button FontFamily="Segoe MDL2 Assets" Background="Transparent" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">&#xE700;</Button>
+                    <Grid x:Name="grdTitleBar" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                        <Rectangle Fill="Yellow"/>
+                        <TextBlock VerticalAlignment="Center" Margin="5">
+                            My Memorizing Cards
+                        </TextBlock>
+                    </Grid>
+                </Grid>
+            </StackPanel>
+        </SplitView>
     </Grid>
 </Page>
